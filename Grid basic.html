@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Grid basic</title>
+    <style>
+        *, html, body {
+            box-sizing: border-box;
+            font-family: "Helvetica Neue", serif;
+        }
+        body, html {
+            height: 100%;
+            width: 100%;
+        }
+        body {
+            display: grid;
+            margin: 0;
+            padding: 10px;
+
+            grid-template-columns: auto auto auto auto;
+            grid-template-rows: 50px 100px 150px 200px;
+            grid-gap: 10px;
+
+            background-color: #cafe;
+        }
+        .elem {
+            display: flex;
+            background-color: #be1ca0;
+        }
+        .elem > * {
+            margin: auto;
+            font-size: 33.33pt;
+            color: #fefefe;
+        }
+    </style>
+</head>
+<body>
+
+<div class="elem">
+    <div>
+        1
+    </div>
+</div>
+<div class="elem">
+    <div>
+        2
+    </div>
+</div>
+<div class="elem">
+    <div>
+        3
+    </div>
+</div>
+<div class="elem">
+    <div>
+        4
+    </div>
+</div>
+<div class="elem">
+    <div>
+        5
+    </div>
+</div>
+<div class="elem">
+    <div>
+        6
+    </div>
+</div>
+<div class="elem">
+    <div>
+        7
+    </div>
+</div>
+<div class="elem" style="grid-column-start: 2; grid-column-end: 4; grid-row-start: 3; grid-row-end: 5">
+    <div>
+        8git st
+    </div>
+</div>
+<div class="elem" style="grid-row: 4">
+    <div>
+        9
+    </div>
+</div>
+
+</body>
+</html>

@@ -13,30 +13,39 @@
             position: relative;
             margin: 0;
             height: 100%;
+            padding-top: calc(50vh - 10px);
+
             background-color: #cafe;
         }
-        /*.body_inner {*/
-            /*position: absolute;*/
-            /*height: 100px;*/
-            /*top: 50%;*/
-            /*margin-top: -50px;*/
-        /*}*/
+        .body_inner {
+            margin-top: -50px;
+        }
         .elem {
+            position: relative;
             display: inline;
             float: left;
             padding: 10px;
 
+            height: 100px;
             width: 25%;
+            /*border: 10px #111 solid;*/
 
-            color: #fff;
+            color: #fefefe;
         }
         .elem * {
             font-size: 33.33pt;
         }
         .elem .elem_nested {
+            position: relative;
             height: 100%;
             width: 100%;
             background-color: #be1ca0;
+        }
+        .elem_nested .centered {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translateY(-50%) translateX(-50%);
         }
     </style>
 </head>
@@ -45,23 +54,31 @@
 <div class="body_inner">
     <div class="elem">
         <div class="elem_nested">
-            1
+            <div class="centered">
+                1
+            </div>
         </div>
     </div>
     <div class="elem">
         <div class="elem_nested">
-            2
+            <div class="centered">
+                2
+            </div>
         </div>
     </div>
     <div class="elem">
         <div class="elem_nested">
-            3
+            <div class="centered">
+                3
+            </div>
         </div>
     </div>
     <div class="elem">
         <div class="elem_nested">
-            4
-        </div>.
+            <div class="centered">
+                4
+            </div>
+        </div>
     </div>
 </div>
 

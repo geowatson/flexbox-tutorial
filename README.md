@@ -1,6 +1,8 @@
 # Roadmap
 0. Old school
 1. Flexbox basic
+2. Grid basic
+3. Template for auth module -> practice!
 # Useful links
 * https://www.w3schools.com/css/css_float.asp - what the heck? this is `hello from year<=2017`
 * https://yoksel.github.io/flex-cheatsheet/ - play with different flexbox variations, get used to it
