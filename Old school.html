@@ -1,0 +1,69 @@
+<!-- jeez.. please don't try these ancient hieroglyphs/manuscripts in prod -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Old school</title>
+    <style>
+        *, html, body {
+            box-sizing: border-box;
+            font-family: "Helvetica Neue", serif;
+        }
+        body {
+            position: relative;
+            margin: 0;
+            height: 100%;
+            background-color: #cafe;
+        }
+        /*.body_inner {*/
+            /*position: absolute;*/
+            /*height: 100px;*/
+            /*top: 50%;*/
+            /*margin-top: -50px;*/
+        /*}*/
+        .elem {
+            display: inline;
+            float: left;
+            padding: 10px;
+
+            width: 25%;
+
+            color: #fff;
+        }
+        .elem * {
+            font-size: 33.33pt;
+        }
+        .elem .elem_nested {
+            height: 100%;
+            width: 100%;
+            background-color: #be1ca0;
+        }
+    </style>
+</head>
+<body>
+
+<div class="body_inner">
+    <div class="elem">
+        <div class="elem_nested">
+            1
+        </div>
+    </div>
+    <div class="elem">
+        <div class="elem_nested">
+            2
+        </div>
+    </div>
+    <div class="elem">
+        <div class="elem_nested">
+            3
+        </div>
+    </div>
+    <div class="elem">
+        <div class="elem_nested">
+            4
+        </div>.
+    </div>
+</div>
+
+</body>
+</html>

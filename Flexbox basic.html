@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Flexbox basic</title>
+    <style>
+        *, html, body {
+            box-sizing: border-box;
+            font-family: "Helvetica Neue", serif;
+        }
+        html, body {
+            height: 100%;
+        }
+        body {
+            display: flex;
+            /*flex-wrap: wrap;*/
+
+            margin: 0;
+            align-items: center;
+            /*align-items: stretch;*/
+
+            background-color: #cafe;
+
+            /*padding: 0 5px;*/
+        }
+        .elem {
+            display: flex;
+            flex: 2;
+            /*flex: 2 0 80%;*/
+
+            margin: 10px;
+            height: 100px;
+
+            opacity: .85;
+            color: #be1ca0;
+            background-color: #be1ca0;
+
+            /*margin: 10px 5px;*/
+        }
+        .elem > * {
+            margin: auto;
+            font-size: 33.33pt;
+            color: #fff;
+        }
+        .elem.smaller {
+            flex: 1;
+            opacity: 1;
+        }
+        .elem.bigger {
+            flex: 3;
+            opacity: .6;
+        }
+        .elem.head {
+            /*align-self: flex-start;*/
+        }
+        .elem.tail {
+            /*align-self: flex-end;*/
+        }
+        .elem > .sad_box {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            height: 40px;
+            width: 40px;
+
+            font-size: 19pt;
+            font-weight: bold;
+
+            background: #face;
+            color: #be1ca0;
+        }
+        .sad_box > * {
+            /*margin: auto;*/
+        }
+    </style>
+</head>
+<body>
+
+<div class="elem">
+    <div>
+        1
+    </div>
+</div>
+<div class="elem smaller head">
+    <div>
+        2
+    </div>
+</div>
+<div class="elem">
+    <div>
+        3
+    </div>
+</div>
+<div class="elem bigger tail">
+    <div>
+        4
+    </div>.
+</div>
+<div class="elem">
+    <div class="sad_box">
+        <div>
+            5
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
